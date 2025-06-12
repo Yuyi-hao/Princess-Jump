@@ -5,12 +5,12 @@ import mainMenu from "./scenes/mainMenu";
 import gameOverScene from "./scenes/gameover";
 
 // load images
-k.loadSprite("castle", "assets/Factions/Knights/Buildings/Castle/Castle_Blue.png");
-k.loadSprite("ground-rock", "/assets/Terrain/Ground/Tilemap_Elevation.png");
-k.loadSprite("water-still", "public/assets/Terrain/Water/Water.png");
+k.loadSprite("castle", "./assets/Factions/Knights/Buildings/Castle/Castle_Blue.png");
+k.loadSprite("ground-rock", "./assets/Terrain/Ground/Tilemap_Elevation.png");
+k.loadSprite("water-still", "./assets/Terrain/Water/Water.png");
 k.loadSprite(
     "shore-water",
-    "assets/Terrain/Water/Foam/Foam.png",
+    "./assets/Terrain/Water/Foam/Foam.png",
     {
         sliceX: 8,
         sliceY: 1,
@@ -20,45 +20,45 @@ k.loadSprite(
     }
 );
 
-k.loadSpriteAtlas("/assets/Terrain/Ground/Tilemap_Elevation.png", {
+k.loadSpriteAtlas("./assets/Terrain/Ground/Tilemap_Elevation.png", {
   "rock-tile-1": { x: 0,  y: 0,   width: 190, height: 256 },
   "rock-tile-2": { x: 10,  y: 256,   width: 180, height: 128 },
   "rock-tile-3": { x: 0,  y: 448,   width: 193, height: 64 },
   "rock-top":    { x: 0,  y: 256, width: 32, height: 32 },
 });
 
-k.loadSpriteAtlas("assets/Terrain/Ground/Tilemap_Flat.png", {
+k.loadSpriteAtlas("./assets/Terrain/Ground/Tilemap_Flat.png", {
   "grass-tile-1": { x: 20,  y: 10,   width: 160, height: 170 },
   "grass-tile-2": { x: 20, y: 256-64, width: 160, height: 50},
   "grass-tile-3": { x: 256,  y: 0, width: 64, height: 64},
   "grass-top":    { x: 0,  y: 256, width: 32, height: 32 },
 });
 
-k.loadSprite("castle-blue", "assets/Factions/Knights/Buildings/Castle/Castle_Blue.png");
-k.loadSprite("tower-blue", "assets/Factions/Knights/Buildings/Tower/Tower_Blue.png");
-k.loadSprite("skull-flag", "public/assets/Deco/16.png");
-k.loadSprite("scare-crow", "public/assets/Deco/18.png");
-k.loadSprite("pumpkin-1", "public/assets/Deco/12.png");
-k.loadSprite("pumpkin-2", "public/assets/Deco/13.png");
+k.loadSprite("castle-blue", "./assets/Factions/Knights/Buildings/Castle/Castle_Blue.png");
+k.loadSprite("tower-blue", "./assets/Factions/Knights/Buildings/Tower/Tower_Blue.png");
+k.loadSprite("skull-flag", "./assets/Deco/16.png");
+k.loadSprite("scare-crow", "./assets/Deco/18.png");
+k.loadSprite("pumpkin-1", "./assets/Deco/12.png");
+k.loadSprite("pumpkin-2", "./assets/Deco/13.png");
 
 // background 
-k.loadSprite("bg-1", "public/background_set/B1010.png");
-k.loadSprite("bg-2", "public/background_set/B1011-1.png");
-k.loadSprite("B1011", "public/background_set/B1011-2.png"); 
-k.loadSprite("B1012", "public/background_set/B1012.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-1.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-2.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-3.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-4.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-5.png"); 
-k.loadSprite("B1013", "public/background_set/B1013-6.png"); 
-k.loadSprite("C2010", "public/background_set/C2010.png"); 
-k.loadSprite("C2011", "public/background_set/C2011.png"); 
-k.loadSprite("C2012", "public/background_set/C2012.png"); 
-k.loadSprite("C2013", "public/background_set/C2013.png"); 
-k.loadSprite("M1010", "public/background_set/M1010.png");
+k.loadSprite("bg-1", "./background_set/B1010.png");
+k.loadSprite("bg-2", "./background_set/B1011-1.png");
+k.loadSprite("B1011", "./background_set/B1011-2.png"); 
+k.loadSprite("B1012", "./background_set/B1012.png"); 
+k.loadSprite("B1013", "./background_set/B1013-1.png"); 
+k.loadSprite("B1013", "./background_set/B1013-2.png"); 
+k.loadSprite("B1013", "./background_set/B1013-3.png"); 
+k.loadSprite("B1013", "./background_set/B1013-4.png"); 
+k.loadSprite("B1013", "./background_set/B1013-5.png"); 
+k.loadSprite("B1013", "./background_set/B1013-6.png"); 
+k.loadSprite("C2010", "./background_set/C2010.png"); 
+k.loadSprite("C2011", "./background_set/C2011.png"); 
+k.loadSprite("C2012", "./background_set/C2012.png"); 
+k.loadSprite("C2013", "./background_set/C2013.png"); 
+k.loadSprite("M1010", "./background_set/M1010.png");
 
-k.loadSprite("fire", "public/assets/Effects/Fire/Fire.png",
+k.loadSprite("fire", "./assets/Effects/Fire/Fire.png",
     {
         sliceX: 7,
         sliceY: 1,
@@ -67,7 +67,7 @@ k.loadSprite("fire", "public/assets/Effects/Fire/Fire.png",
         }
     }
 )
-k.loadSprite("zombie", "/assets/death-lamp.png", {
+k.loadSprite("zombie", "./assets/death-lamp.png", {
     sliceX: 11,
     sliceY: 2,
     anims: {
@@ -77,7 +77,7 @@ k.loadSprite("zombie", "/assets/death-lamp.png", {
     }
 })
 
-k.loadSprite("killer-man", "/assets/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png", {
+k.loadSprite("killer-man", "./assets/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png", {
     sliceX: 6,
     sliceY: 8,
     anims: {
@@ -87,7 +87,7 @@ k.loadSprite("killer-man", "/assets/Factions/Knights/Troops/Warrior/Blue/Warrior
 });
 
 // princess sprite
-k.loadSprite("princess", "public/player-princess.png", {
+k.loadSprite("princess", "./player-princess.png", {
     sliceX: 39,
     sliceY: 2,
     anims:{
@@ -99,7 +99,7 @@ k.loadSprite("princess", "public/player-princess.png", {
 
 
 // Load fonts 
-k.loadFont("mania", "fonts/mania.ttf");
+k.loadFont("mania", "./fonts/mania.ttf");
 
 // load scenes
 k.scene("disclaimer", disclaimer);
